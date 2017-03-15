@@ -7,4 +7,4 @@ Airport.prototype.landingPermission = function(plane) {
   this.runways.push(plane);
 };
 
-var airport = new Airport();
+// var airport = new Airport();

@@ -1,5 +1,5 @@
 describe("Plane", function() {
-  var plane;
+  // var plane;
 
   beforeEach(function () {
     plane = new Plane();

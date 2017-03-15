@@ -10,6 +10,6 @@ Plane.prototype.land = function() {
   this.landed = true;
 };
 
-var plane = new Plane();
+// var plane = new Plane();
 
-airport.landingPermission(plane);
+// airport.landingPermission(plane);
