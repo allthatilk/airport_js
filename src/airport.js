@@ -1,3 +1,10 @@
 function Airport() {
-  this.hangars = [];
+  this.runways = [];
 };
+
+Airport.prototype.landingPermission = function(plane) {
+  plane.land();
+  this.runways.push(plane);
+};
+
+var airport = new Airport();
