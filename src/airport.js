@@ -3,8 +3,13 @@ function Airport() {
 };
 
 Airport.prototype.landingPermission = function(plane) {
-  plane.land();
-  this.runways.push(plane);
+  if (this.runways.length === 10)
+    throw "Airport is full";
+  else
+    plane.land();
+    this.runways.push(plane);
 };
+
+
 
 // var airport = new Airport();

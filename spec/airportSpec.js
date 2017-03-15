@@ -11,13 +11,12 @@ describe("Airport", function() {
       // expect(airport.runways).toContain(plane);
       expect(airport.runways.indexOf(plane)).toEqual(0);
     });
-debugger
     it("has a maximum capacity", function() {
-      for(var i = 0; i < 10; i++){
+      for(var i = 0; i < 9; i++){
         jet = new Plane;
         airport.landingPermission(jet);
       }
-      expect(airport.landingPermission(plane)).toThrow(new Error("Airport is full"));
+      expect( function(){ airport.landingPermission(plane); } ).toThrow (new Error("Airport is full"));
     }
   )
   });
